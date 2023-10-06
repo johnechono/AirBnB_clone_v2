@@ -5,12 +5,12 @@
 import os
 from fabric.api import run, put, env
 
-env.hosts = ['44.192.38.3', '3.239.82.120']
+env.hosts = ['100.25.188.189', '100.26.230.110']
 env.user = "ubuntu"
 
 
 def do_deploy(archive_path):
-    """Create a tar gzipped archive of the directory web_static."""
+    """Create a targzipped archive of the directory web_static."""
     if os.path.exists(archive_path) is False:
         return False
     else:
